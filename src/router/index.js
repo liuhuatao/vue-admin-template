@@ -8,6 +8,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '../views/layout/Layout'
+import paymentRouter from './modules/payment'
 
 /**
 * hidden: true                   if `hidden:true` will not show in the sidebar(default is false)
@@ -140,7 +141,7 @@ export const constantRouterMap = [
       }
     ]
   },
-
+  paymentRouter,
   { path: '*', redirect: '/404', hidden: true }
 ]
 
